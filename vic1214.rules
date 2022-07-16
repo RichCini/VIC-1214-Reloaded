@@ -1,0 +1,115 @@
+
+(rules PCB vic1214
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 102)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.3)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.8)
+    )
+  )
+  (rule
+    (width 300.0)
+    (clear 250.2)
+    (clear 0.0 (type smd_to_turn_gap))
+    (clear 62.6 (type smd_smd))
+  )
+  (padstack "Via[0-1]_889:635_um"
+    (shape
+      (circle F.Cu 889.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 889.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_889:635_um" "Via[0-1]_889:635_um" default
+  )
+  (via 
+    "Via[0-1]_889:635_um-kicad_default" "Via[0-1]_889:635_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_889:635_um-GND" "Via[0-1]_889:635_um" GND
+  )
+  (via 
+    "Via[0-1]_889:635_um-PWR" "Via[0-1]_889:635_um" PWR
+  )
+  (via_rule
+    default "Via[0-1]_889:635_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_889:635_um-kicad_default"
+  )
+  (via_rule
+    GND "Via[0-1]_889:635_um-GND"
+  )
+  (via_rule
+    PWR "Via[0-1]_889:635_um-PWR"
+  )
+  (class default
+    "Net-(C102-Pad1)" GNDA "Net-(C103-Pad1)" "Net-(C103-Pad2)" "Net-(C105-Pad1)" "Net-(C106-Pad2)" "Net-(C108-Pad1)" "Net-(C108-Pad2)"
+    "Net-(C109-Pad1)" "Net-(C110-Pad1)" "Net-(C111-Pad1)" "Net-(C111-Pad2)" "Net-(JP101-Pad1)" "Net-(R101-Pad1)" "Net-(R102-Pad2)" "unconnected-(U101-Pad3)"
+    "unconnected-(U101-Pad4)" "unconnected-(U101-Pad5)" "unconnected-(U101-Pad6)" "unconnected-(U101-Pad7)" "unconnected-(U101-Pad8)" "unconnected-(U101-Pad9)" "unconnected-(U101-Pad10)" "unconnected-(U101-Pad11)"
+    "unconnected-(U101-PadB)" PB0 PB1 PB2 PB3 PB4 PB5 PB6
+    PB7 "unconnected-(U101-PadM)" "unconnected-(U102-Pad4)" "unconnected-(U102-Pad5)" "unconnected-(U102-Pad6)" "unconnected-(U102-Pad9)" "unconnected-(U102-Pad12)" "unconnected-(U102-Pad21)"
+    "unconnected-(U102-Pad26)" "Net-(U103-Pad3)" "unconnected-(J101-Pad11)" "Net-(J101-Pad10)" "unconnected-(J101-Pad6)" "unconnected-(J101-Pad5)" "unconnected-(J101-Pad4)"
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 300.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 300.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class GND
+    GND
+    (clearance_class GND)
+    (via_rule GND)
+    (rule
+      (width 1000.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class PWR
+    VCC
+    (clearance_class PWR)
+    (via_rule PWR)
+    (rule
+      (width 508.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)
