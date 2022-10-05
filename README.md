@@ -23,4 +23,9 @@ but it didn't work. I suspect that the signal phase is
 wrong, but until I test it with my Silgent waveform
 generator, I won't know. I think it needs an inverted
 clock in order to work. So, the existing design uses
-the tried-and-true crystal for now.
+the tried-and-true crystal for now. Changing the crystal
+frequency will change the pitch of the voice, so even a
+colorburst crystal (3.59MHz) will work.
+
+I had a few sample boards made and it works flawlessly with
+the LM386 amplifier. Glad to see it worked the first time!
