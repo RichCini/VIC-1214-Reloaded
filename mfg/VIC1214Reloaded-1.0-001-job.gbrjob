@@ -5,7 +5,7 @@
       "Application": "Pcbnew",
       "Version": "(6.0.4-0)"
     },
-    "CreationDate": "2022-07-16T13:11:57-04:00"
+    "CreationDate": "2022-09-19T22:18:14-04:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
@@ -27,9 +27,7 @@
       "PadToPad": 0.0,
       "PadToTrack": 0.0,
       "TrackToTrack": 0.25,
-      "MinLineWidth": 0.3,
-      "TrackToRegion": 0.35,
-      "RegionToRegion": 0.35
+      "MinLineWidth": 0.3
     }
   ],
   "FilesAttributes": [
@@ -52,6 +50,16 @@
       "Path": "VIC1214Reloaded-1.0-001-B_Silkscreen.gbo",
       "FileFunction": "Legend,Bot",
       "FilePolarity": "Positive"
+    },
+    {
+      "Path": "VIC1214Reloaded-1.0-001-F_Mask.gts",
+      "FileFunction": "SolderMask,Top",
+      "FilePolarity": "Negative"
+    },
+    {
+      "Path": "VIC1214Reloaded-1.0-001-B_Mask.gbs",
+      "FileFunction": "SolderMask,Bot",
+      "FilePolarity": "Negative"
     },
     {
       "Path": "VIC1214Reloaded-1.0-001-Edge_Cuts.gm1",
