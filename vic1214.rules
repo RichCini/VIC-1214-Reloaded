@@ -4,14 +4,14 @@
     fortyfive_degree
   )
   (autoroute_settings
-    (fanout off)
+    (fanout on)
     (autoroute on)
     (postroute on)
     (vias on)
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 102)
+    (start_pass_no 9)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -65,12 +65,12 @@
     PWR "Via[0-1]_889:635_um-PWR"
   )
   (class default
-    "Net-(C102-Pad1)" GNDA "Net-(C103-Pad1)" "Net-(C103-Pad2)" "Net-(C105-Pad1)" "Net-(C106-Pad2)" "Net-(C108-Pad1)" "Net-(C108-Pad2)"
-    "Net-(C109-Pad1)" "Net-(C110-Pad1)" "Net-(C111-Pad1)" "Net-(C111-Pad2)" "Net-(JP101-Pad1)" "Net-(R101-Pad1)" "Net-(R102-Pad2)" "unconnected-(U101-Pad3)"
-    "unconnected-(U101-Pad4)" "unconnected-(U101-Pad5)" "unconnected-(U101-Pad6)" "unconnected-(U101-Pad7)" "unconnected-(U101-Pad8)" "unconnected-(U101-Pad9)" "unconnected-(U101-Pad10)" "unconnected-(U101-Pad11)"
-    "unconnected-(U101-PadB)" PB0 PB1 PB2 PB3 PB4 PB5 PB6
-    PB7 "unconnected-(U101-PadM)" "unconnected-(U102-Pad4)" "unconnected-(U102-Pad5)" "unconnected-(U102-Pad6)" "unconnected-(U102-Pad9)" "unconnected-(U102-Pad12)" "unconnected-(U102-Pad21)"
-    "unconnected-(U102-Pad26)" "Net-(U103-Pad3)" "unconnected-(J101-Pad11)" "Net-(J101-Pad10)" "unconnected-(J101-Pad6)" "unconnected-(J101-Pad5)" "unconnected-(J101-Pad4)"
+    "Net-(C102-Pad1)" GNDA "Net-(C103-Pad1)" "Net-(C104-Pad1)" "Net-(C109-Pad1)" "Net-(C110-Pad1)" "Net-(C111-Pad1)" "Net-(JP101-Pad1)"
+    "Net-(R101-Pad1)" "Net-(C106-Pad1)" "unconnected-(U101-Pad3)" "unconnected-(U101-Pad4)" "unconnected-(U101-Pad5)" "unconnected-(U101-Pad6)" "unconnected-(U101-Pad7)" "unconnected-(U101-Pad8)"
+    "unconnected-(U101-Pad9)" "unconnected-(U101-Pad10)" "unconnected-(U101-Pad11)" "unconnected-(U101-PadB)" PB0 PB1 PB2 PB3
+    PB4 PB5 PB6 PB7 "unconnected-(U101-PadM)" "unconnected-(U102-Pad4)" "unconnected-(U102-Pad5)" "unconnected-(U102-Pad6)"
+    "unconnected-(U102-Pad9)" "unconnected-(U102-Pad12)" "unconnected-(U102-Pad21)" "unconnected-(U102-Pad26)" "Net-(U103-Pad3)" "unconnected-(J101-Pad11)" "Net-(J101-Pad10)" "unconnected-(J101-Pad6)"
+    "unconnected-(J101-Pad5)" "unconnected-(J101-Pad4)" "Net-(C107-Pad2)" "Net-(C109-Pad2)" "Net-(C112-Pad1)" "Net-(C112-Pad2)"
     (clearance_class default)
     (via_rule default)
     (rule
